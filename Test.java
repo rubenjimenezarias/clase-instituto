@@ -13,11 +13,11 @@ public class Test
      */
     public Test()
     {
-        Alumno alumno1 = new Alumno("pepe",26);
-        Alumno alumno2 = new Alumno("manolo",85);
-        Alumno alumno3 = new Alumno("ruben",24);
-        Alumno alumno4 = new Alumno("laura",45);
-        Alumno alumno5 = new Alumno("miguel",32);
+        Alumno alumno1 = new Alumno("pepe");
+        Alumno alumno2 = new Alumno("manolo");
+        Alumno alumno3 = new Alumno("ruben");
+        Alumno alumno4 = new Alumno("laura");
+        Alumno alumno5 = new Alumno("miguel");
         
         System.out.println(alumno1.datos());
         System.out.println(alumno2.datos());

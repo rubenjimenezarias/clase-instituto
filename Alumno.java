@@ -17,11 +17,14 @@ public class Alumno
     /**
      * Constructor for objects of class Alumno
      */
-    public Alumno(String nombre, int edad)
+    public Alumno(String nombre)
     {
         // initialise instance variables
         this.nombre = nombre;
-        this.edad = edad;
+        
+        Random aleatorio = new Random();
+        edad = aleatorio.nextInt(100);
+        
         media = 0;
         generaNotas();
     }
