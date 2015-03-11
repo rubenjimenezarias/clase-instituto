@@ -13,6 +13,8 @@ public class Alumno
     private int edad;
     private int[] notas;
     private float media;
+    private int numeroAlumno;
+    private static int NUMERO_AULA = 0;
 
     /**
      * Constructor for objects of class Alumno
@@ -25,6 +27,8 @@ public class Alumno
         Random aleatorio = new Random();
         edad = aleatorio.nextInt(100);
         
+        NUMERO_AULA ++;
+        numeroAlumno = NUMERO_AULA;
         media = 0;
         generaNotas();
     }
@@ -60,6 +64,6 @@ public class Alumno
      */
     public String datos()
     {
-        return nombre + ", " + edad + ", media: " + media;
+        return numeroAlumno + " " + nombre + ", " + edad + ", media: " + media;
     }
 }
